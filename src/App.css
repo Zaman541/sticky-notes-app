@@ -1,0 +1,162 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    text-decoration: underline;
+  }
+  
+  .dashboard {
+    margin-top: 20px;
+  }
+  
+  .notes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .note {
+    background-color: #fafaf8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    border-left: 5px solid #ffffff;
+    transition: transform 0.2s ease;
+    position: relative;
+  }
+  
+  .note:hover {
+    transform: scale(1.02);
+  }
+  
+  .note h4 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .note p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .note-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .note-actions button,
+  .note-actions a {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .note-actions button {
+    background-color: #f0ad4e; /* Yellow for edit */
+    border: none;
+    color: white;
+  }
+  
+  .note-actions button:hover {
+    background-color: #ec971f;
+    transform: scale(1.05);
+  }
+  
+  .note-actions a {
+    background-color: #d9534f; /* Red for delete */
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  .note-actions a:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+  }
+  
+  .add-note {
+    margin-top: 20px;
+  }
+  
+  .note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .note-form button {
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  .note-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .error {
+    color: #d8000c;
+    background-color: #ffbaba;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .success {
+    color: #4f8a10;
+    background-color: #dff2bf;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
