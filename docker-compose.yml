@@ -5,7 +5,7 @@ services:
     build: .
     image: ru0300usman/myapp3:latest # Replace with your Docker Hub details
     ports:
-      - "4000:80"
+      - "3000:80"
     depends_on:
       - db
 
