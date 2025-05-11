@@ -24,7 +24,7 @@ FROM nginx:alpine
 EXPOSE 80
 
 # Copy the built application from the previous stage
-COPY --from=0 /app/dist /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
 
 # Optionally, if you have a custom nginx configuration, copy it here
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
